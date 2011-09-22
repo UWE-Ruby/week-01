@@ -84,14 +84,18 @@ It is with great pleasure that I welcome you to the Land of Ruby. What lies ahea
 
 1. Install Bundler (gem)
 
-    gem install bundler
+```bash
+gem install bundler
+```
 
 [Bundler](http://gembundler.com/rationale.html) is a library that takes care of installing all the remaining, necessary libraries (gems) for a project. This assignment requires a number of ruby libraries (gems) and instead of having you enter all those in, Bundler will take care of it for you.
 
 2. Install all the remaining gems
 
-    bundle
-    
+```bash
+bundle
+```
+
 Executing `bundle install` will take of installing all the remaining gems that this project requires.
 
 3. Run the tests
@@ -187,39 +191,39 @@ The following editors are simply suggestions:
 
     The following exercises spend a moment with each. Don't feel like you need to explore each one or explore just one.
 
-    #### [RSpec](https://www.relishapp.com/rspec)
+#### [RSpec](https://www.relishapp.com/rspec)
 
-    RSpec speaks in the languages of `describe`, `context`, and `it`. You also may have noticed a lot of the word `should`. This is the Domain Specific Language (DSL) of Behavior Driven Design (BDD).
+RSpec speaks in the languages of `describe`, `context`, and `it`. You also may have noticed a lot of the word `should`. This is the Domain Specific Language (DSL) of Behavior Driven Design (BDD).
 
-    While `describe` and `context` syntactically are not very different, save for the restriction that `context` cannot be used as a top level element within a spec file, it is often good to use `context` in situations where a group of tests are illustrating a particular state.
+While `describe` and `context` syntactically are not very different, save for the restriction that `context` cannot be used as a top level element within a spec file, it is often good to use `context` in situations where a group of tests are illustrating a particular state.
 
-    ```ruby
-    describe "Client" do
-      describe '#connect' do
-        context 'when the server is available' do
-          it 'should connect to the default server' do
-            # ... example to test the connection
-          end
-        end
-
-        context 'when the server is not available' do
-          it 'should raise an exception' do
-            # ... example that tests throwing an error 
-          end
-        end
+```ruby
+describe "Client" do
+  describe '#connect' do
+    context 'when the server is available' do
+      it 'should connect to the default server' do
+        # ... example to test the connection
       end
     end
-    ```
 
-    * Try changing `describe` with `context` in every instance.
+    context 'when the server is not available' do
+      it 'should raise an exception' do
+        # ... example that tests throwing an error 
+      end
+    end
+  end
+end
+```
 
-    * Try changing every use of `context` with `describe`.
+* Try changing `describe` with `context` in every instance.
 
-    When you state an expectation in the test you are using RSpec's   [matchers](https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers). This is that bit of code hanging off of the value you are testing `.should eq(expected)` or `.should be_kind_of(NilClass)`.
+* Try changing every use of `context` with `describe`.
 
-    * Take a look at some of the [built in matchers](https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers) and try using a new one to make a `failing` expectation.
+When you state an expectation in the test you are using RSpec's   [matchers](https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers). This is that bit of code hanging off of the value you are testing `.should eq(expected)` or `.should be_kind_of(NilClass)`.
 
-    * Try using a new one to make a `passing` expectation.
+* Take a look at some of the [built in matchers](https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers) and try using a new one to make a `failing` expectation.
+
+* Try using a new one to make a `passing` expectation.
 
 #### Rake
 
