@@ -31,7 +31,7 @@ Ruby Version Manager (RVM) allows you to install multiple ruby versions on your 
 Even if you are only going to use one Ruby version it is still important to ensure that you are familiar with a tool that is industry standard. It also makes it unbelievably easier to install ruby.
 
 If you are comfotable with the command line and or on linux, Visit: http://beginrescueend.com/rvm/install/
-If you are on MacOS, there is a useful and fun GUI: [Jewelr](http://jewelrybox.unfiniti.com/)
+If you are on MacOS, there is a useful and fun GUI: [JewelryBox](http://jewelrybox.unfiniti.com/)
 
 
 ### Windows
