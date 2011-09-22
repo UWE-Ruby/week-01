@@ -90,19 +90,19 @@ It is with great pleasure that I welcome you to the Land of Ruby. What lies ahea
 
 2. Install all the remaining gems
 
-    bundle install
+    bundle
     
 Executing `bundle install` will take of installing all the remaining gems that this project requires.
 
 3. Run the tests
 
-    spec spec/*_.rb
-    
-OR:
+The tests for this project are written in a Ruby test library named [RSpec](https://www.relishapp.com/rspec).
 
     rake
 
 4. Setup a guard
+
+When you're trying to solve problems or simply exploring the Ruby language it becomes tiring having to: write; save, and run the tests. Thankfully other developers understood that and put together a library (gem) called Guard. Guard will watch to see when test files are saved and re-run the tests for you automatically.
 
     guard
 
@@ -114,21 +114,16 @@ Within the tests that have executed several of them are passing but a few are br
 
 6. Save your changes
 
-Commit the changes locally
+When you have finished fixing the tests it is time to save your work with git. What follows is a series of commands that will save your files.
 
-    git add ...
+    git add spec
     git commit -m "Fixes"
 
 7. Share your changes
 
-Push the changes to your repository.
+With your files saved (committed), you can copy those changes to your repository on Github. Creating a copy of them on an external system, allowing you to: recover them if you were to delete them locally; start work on another system; or share your work with other people.
 
     git push origin master
-
-## Using the resources of the land
-
-1. Login to Travis CI and authorize Travis CI
-2. Select your forked repository to be built
 
 ## Exploration
 
@@ -187,3 +182,46 @@ The following editors are simply suggestions:
 
 
 4. Explore Bundler, Rake, Guard, or RSpec
+
+### Bundler
+
+Bundler is a dependency management tool for Ruby. The benefit of defining this Gemfile is that when you share the program with others this will describe all the libraries (gems) that are required.
+
+* Try adding a new gem to the Gemfile
+
+You can add almost any gem as a dependency to your system. Go to [Rubygems.org](http://rubygems.org/) and select one of the gems listed in either of the sections: New Gems; Most Downloaded Today; Just Updated.
+
+Click on the gem name and scroll down until you see the section titled *Bundler*. Copy and paste that section into your Gemfile. Run the command:
+
+    bundle
+
+* What is dependency management?
+* Why is it useful?
+* What is the syntax
+* Is it similar to other dependency management systems you have used?
+
+#### Ruby Syntax
+
+
+### Rake
+
+#### Tasks
+
+* Execute `rake spec`
+
+This is the same as the command `rake`. Why is it the same? What makes it the same?
+
+* Try changing the name of the rake task `rspec`
+
+Try executing the command `rake`. Does it still work?  What happens when you specify a different value for as the default.
+
+* Try creating a new rake task
+* Try changing the default rake task to your new rake task
+
+#### Ruby Syntax
+
+* Try changing the rake task names from Symbols to Strings
+
+The tasks `:spec` and `:default` are [Symbols](http://www.randomhacks.net/articles/2007/01/20/13-ways-of-looking-at-a-ruby-symbol). Do the tasks still work when you change them to `'spec'` or `'default'`?
+
+* Read about the [system](http://rubydoc.info/stdlib/core/1.9.2/Kernel#system-instance_method) method
