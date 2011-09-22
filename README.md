@@ -127,7 +127,7 @@ With your files saved (committed), you can copy those changes to your repository
 
 ## Exploration
 
-1. Learn more about `git`
+### Learn more about `git`
 
 Git is complex software. 
 http://gitref.org/
@@ -137,7 +137,7 @@ Spend some time learning more about git. Read through at least the introduction 
     I assure you that the more time you spend here trying to understand or learning, the more amazing you will be in the rest of the development that you do.
 
 
-2. Learn more about `github`
+### Learn more about `github`
 
 Return to the [Github Help Section](http://help.github.com/).
 
@@ -146,7 +146,7 @@ On the right-hand side there are several sections of content starting with the l
     As Github has become the cornerstone of the open-source software development in recent years, I implore you to spend some time cruising around the Facebook of software development.
     
     
-3. Think about a text editor
+### Think about a text editor
 
 It's a big step and I am sure you will want to talk to your parents, older siblings and any religious figures that provide you guidance in making this decision. It is not one that I can make for you.
 
@@ -156,7 +156,7 @@ Select an editor that gets you most of the way there. After awhile, when the dus
 
 The following editors are simply suggestions:
 
-### Windows
+#### Windows
 
 * [Redcar](http://redcareditor.com/)
 * [Notepad++](http://notepad-plus-plus.org/)
@@ -164,14 +164,14 @@ The following editors are simply suggestions:
 * [Komodo Edit](http://www.activestate.com/komodo-edit)
 * [E Editor](http://www.e-texteditor.com/)
 
-### Linux
+#### Linux
 
 * [Redcar](http://redcareditor.com/)
 * [Rubymine](http://www.jetbrains.com/ruby/)
 * vi
 * emacs
 
-### Mac
+#### Mac
 
 * [Redcar](http://redcareditor.com/)
 * [TextMate](http://macromates.com/)
@@ -181,9 +181,68 @@ The following editors are simply suggestions:
 * emacs
 
 
-4. Explore Bundler, Rake, Guard, or RSpec
+### Explore Bundler, Rake, Guard, or RSpec
 
-### Bundler
+*Bundler*, *Rake*, *Guard* and *RSpec* are all written in Ruby. Yet they all have very different syntax. This can often times lead to confusion to those of new to the Land of Ruby. Under the sheets it is using some of the more advanced features of Ruby to make it the code written more clear and to the point.
+
+    The following exercises spend a moment with each. Don't feel like you need to explore each one or explore just one.
+
+    #### [RSpec](https://www.relishapp.com/rspec)
+
+    RSpec speaks in the languages of `describe`, `context`, and `it`. You also may have noticed a lot of the word `should`. This is the Domain Specific Language (DSL) of Behavior Driven Design (BDD).
+
+    While `describe` and `context` syntactically are not very different, save for the restriction that `context` cannot be used as a top level element within a spec file, it is often good to use `context` in situations where a group of tests are illustrating a particular state.
+
+    ```ruby
+    describe "Client" do
+      describe '#connect' do
+        context 'when the server is available' do
+          it 'should connect to the default server' do
+            # ... example to test the connection
+          end
+        end
+
+        context 'when the server is not available' do
+          it 'should raise an exception' do
+            # ... example that tests throwing an error 
+          end
+        end
+      end
+    end
+    ```
+
+    * Try changing `describe` with `context` in every instance.
+
+    * Try changing every use of `context` with `describe`.
+
+    When you state an expectation in the test you are using RSpec's   [matchers](https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers). This is that bit of code hanging off of the value you are testing `.should eq(expected)` or `.should be_kind_of(NilClass)`.
+
+    * Take a look at some of the [built in matchers](https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers) and try using a new one to make a `failing` expectation.
+
+    * Try using a new one to make a `passing` expectation.
+
+#### Rake
+
+Rake speaks in the language of `task`. A task makes it easy to execute operations with just a name. First experiencing Rake you notice that by simply typing the command `rake` you essentially typed out `rpsec spec/*_spec.rb`. `rake` is by far easier to remember and hides behind it the complexity of what is going on when you execute your tests.
+
+* Execute `rake spec`
+
+This is the same as the command `rake`. Why is it the same? What makes it the same?
+
+* Try changing the name of the rake task `rspec`
+
+Try executing the command `rake`. Does it still work?  What happens when you specify a different value for as the default.
+
+* Try creating a new rake task
+* Try changing the default rake task to your new rake task
+
+* Try changing the rake task names from Symbols to Strings
+
+The tasks `:spec` and `:default` are [Symbols](http://www.randomhacks.net/articles/2007/01/20/13-ways-of-looking-at-a-ruby-symbol). Do the tasks still work when you change them to `'spec'` or `'default'`?
+
+* Read about the [system](http://rubydoc.info/stdlib/core/1.9.2/Kernel#system-instance_method) method
+
+#### Bundler
 
 Bundler is a dependency management tool for Ruby. The benefit of defining this Gemfile is that when you share the program with others this will describe all the libraries (gems) that are required.
 
@@ -197,31 +256,4 @@ Click on the gem name and scroll down until you see the section titled *Bundler*
 
 * What is dependency management?
 * Why is it useful?
-* What is the syntax
 * Is it similar to other dependency management systems you have used?
-
-#### Ruby Syntax
-
-
-### Rake
-
-#### Tasks
-
-* Execute `rake spec`
-
-This is the same as the command `rake`. Why is it the same? What makes it the same?
-
-* Try changing the name of the rake task `rspec`
-
-Try executing the command `rake`. Does it still work?  What happens when you specify a different value for as the default.
-
-* Try creating a new rake task
-* Try changing the default rake task to your new rake task
-
-#### Ruby Syntax
-
-* Try changing the rake task names from Symbols to Strings
-
-The tasks `:spec` and `:default` are [Symbols](http://www.randomhacks.net/articles/2007/01/20/13-ways-of-looking-at-a-ruby-symbol). Do the tasks still work when you change them to `'spec'` or `'default'`?
-
-* Read about the [system](http://rubydoc.info/stdlib/core/1.9.2/Kernel#system-instance_method) method
