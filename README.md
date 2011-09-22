@@ -24,13 +24,14 @@ Git is a distributed version control system. This is an essential tool to ensure
 
 2. Install RVM and Ruby 1.9.2 (Linux/Mac)
 
-    Sorry Window's users, there is simply nothing that can be done here.
+    Sorry Window's users, there is no rvm for Windows. There is [Pik](https://github.com/vertiginous/pik) but the instructors cannot support it.
 
 Ruby Version Manager (RVM) allows you to install multiple ruby versions on your system and switch between them easily. You may be asking: _Why am I worrying about multiple different versions of Ruby when I don't even know how to program in one?_ Great question, you sure are smart!
 
 Even if you are only going to use one Ruby version it is still important to ensure that you are familiar with a tool that is industry standard. It also makes it unbelievably easier to install ruby.
 
-    Visit: http://beginrescueend.com/rvm/install/
+If you are comfotable with the command line and or on linux, Visit: http://beginrescueend.com/rvm/install/
+If you are on MacOS, there is a useful and fun GUI: [Jewelr](http://jewelrybox.unfiniti.com/)
 
 
 ### Windows
