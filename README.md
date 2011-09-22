@@ -45,36 +45,92 @@ However, thanks to the efforts of a few, Ruby development on Windows system has 
 
     Visit: http://railsinstaller.org/
 
-## Using Git and Github
+## The Kingdom of Github
 
-1. Create a Github account
-2. Send me a message so I know who you are @burtlo
-3. Add you the UWE Ruby organization
-3. Fork this repository to your account
-4. Clone the repository on your system
+Github is a easy, and free (as long as what you are doing is public) way to share code and collaborate with others. It's like the Facebook of software development.
 
-## Traveling through the Land of Ruby
+Accounts are free for all the work that we are doing and your account will likely be free for as long as what you are doing does not need to be private.
 
-1. Install Bundler
-2. bundle install
-2. Run the tests for week 1
-3. Fix the tests
-4. Commit the changes locally
-5. Push the changes to your repository
+    An exercise near the end encourages you to return to learn more about Github.
+
+1. Create a [Github](https://github.com/signup/free) account
+
+    Visit: https://github.com/signup/free
+
+2. Message me [burtlo](https://github.com/burtlo).
+
+    Visit: https://github.com/inbox/new
+    
+3. I will add you the [UWE-Ruby](https://github.com/organizations/UWE-Ruby) organization
+
+Alongside individual developer accounts you can form organizations. They are also free as long as you willing to host public projects. In most cases you do not need to form an organization. It is beneficial for us here so that you can view the assignment repositories.
+  
+4. Fork and clone this repository
+
+    Visit: http://help.github.com/fork-a-repo/
+
+Any user can fork any public repository. That means you can very easily create your own personal versions of anything that someone else has created (e.g. like the [linux](https://github.com/torvalds/linux)).
+
+When you fork it, a copy is made that you have the ability to augment. By forking the assignment you can make changes to your version, while the original
+version owned by me remains mine.
+
+## The Land of Ruby
+
+Move yourself into the project directory that you have just recently cloned.
+
+It is with great pleasure that I welcome you to the Land of Ruby. What lies ahead are again very deep, rich tools (read: COMPLEX). Again, these are tools that will serve you through the next few months of Ruby development so it is important to present them to you first very simply.
+
+   Do not be discouraged if again you feel as though you are simply following steps without any understanding. You will do this again and again.
+
+1. Install Bundler (gem)
+
+    gem install bundler
+
+[Bundler](http://gembundler.com/rationale.html) is a library that takes care of installing all the remaining, necessary libraries (gems) for a project. This assignment requires a number of ruby libraries (gems) and instead of having you enter all those in, Bundler will take care of it for you.
+
+2. Install all the remaining gems
+
+    bundle install
+    
+Executing `bundle install` will take of installing all the remaining gems that this project requires.
+
+3. Run the tests
+
+    spec spec/*_.rb
+    
+OR:
+
+    rake
+
+4. Setup a guard
+
+    guard
+
+5. Fix the broken tests
+
+Within the tests that have executed several of them are passing but a few are broken. It's mighty morphing Ruby time!
+
+    [TODO: Broken Tests Missing]
+
+6. Save your changes
+
+Commit the changes locally
+
+    git add ...
+    git commit -m "Fixes"
+
+7. Share your changes
+
+Push the changes to your repository.
+
+    git push origin master
 
 ## Using the resources of the land
 
 1. Login to Travis CI and authorize Travis CI
 2. Select your forked repository to be built
 
-## Getting to know your neighbors
-
-1. Find, follow and share a ruby blog through an RSS reader
-2. Watch a person or another project on Github
-3. Login to us.freenode.net
-4. Login to our Hipchat
-
-## Learning more about your tools
+## Exploration
 
 1. Learn more about `git`
 
@@ -128,3 +184,6 @@ The following editors are simply suggestions:
 * [macvim](http://code.google.com/p/macvim/)
 * vi
 * emacs
+
+
+4. Explore Bundler, Rake, Guard, or RSpec
