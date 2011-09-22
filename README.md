@@ -96,8 +96,7 @@ gem install bundler
 ```bash
 bundle
 ```
-
-Executing `bundle install` will take of installing all the remaining gems that this project requires.
+Executing `bundle ` will take care of installing all the remaining gems that this project requires.
 
 3. Run the tests
 
@@ -107,7 +106,7 @@ The tests for this project are written in a Ruby test library named [RSpec](http
 
 4. Setup a guard
 
-When you're trying to solve problems or simply exploring the Ruby language it becomes tiring having to: write; save, and run the tests. Thankfully other developers understood that and put together a library (gem) called Guard. Guard will watch to see when test files are saved and re-run the tests for you automatically.
+When you're trying to solve problems or simply exploring the Ruby language it becomes tiring having to: write code; save code; and run the the tests. Thankfully other developers understood that and put together a library (gem) called Guard. Guard will watch to see when test files are saved and re-run the tests for you automatically.
 
     guard
 
@@ -122,7 +121,7 @@ Within the tests that have executed several of them are passing but a few are br
 When you have finished fixing the tests it is time to save your work with git. What follows is a series of commands that will save your files.
 
     git add spec
-    git commit -m "Fixes"
+    git commit -m "Fixes to the Broken Tests"
 
 7. Share your changes
 
@@ -186,7 +185,7 @@ The following editors are simply suggestions:
 * emacs
 
 
-### Explore Bundler, Rake, Guard, or RSpec
+### Explore Ruby through RSpec, Rake, and Bundler
 
 *Bundler*, *Rake*, *Guard* and *RSpec* are all written in Ruby. Yet they all have very different syntax. This can often times lead to confusion to those of new to the Land of Ruby. Under the sheets it is using some of the more advanced features of Ruby to make it the code written more clear and to the point.
 
@@ -215,16 +214,30 @@ describe "Client" do
   end
 end
 ```
+* Try replacing `describe` with `context` in every instance.
 
-* Try changing `describe` with `context` in every instance.
-
-* Try changing every use of `context` with `describe`.
+* Try replacing every use of `context` with `describe`.
 
 When you state an expectation in the test you are using RSpec's   [matchers](https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers). This is that bit of code hanging off of the value you are testing `.should eq(expected)` or `.should be_kind_of(NilClass)`.
 
 * Take a look at some of the [built in matchers](https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers) and try using a new one to make a `failing` expectation.
 
 * Try using a new one to make a `passing` expectation.
+
+#### Strings, Symbols, Booleans, and Numbers, oh my!
+
+Even though you completed the assignment by fixing all the broken tests you could return to the tests to learn more about the classes that you quickly came to understand.
+
+Using [Rubydoc.info](http://rubydoc.info/) as a resource try to define your own tests for one of the following classes:
+
+[Strings](http://rubydoc.info/stdlib/core/1.9.2/String) have methods for all kinds of operations that may prove useful to you in the future (e.g. splitting, replacing, and trimming).
+
+[Integers](http://rubydoc.info/stdlib/core/1.9.2/Integer) and [Floats](http://rubydoc.info/stdlib/core/1.9.2/Float) are a mainstay of any language. The Kane to the String's Abel. Often times you will want to increase a value by one, find out if they are even/odd, or round to the nearest value. How do you do that in Ruby?
+
+[Symbols](http://rubydoc.info/stdlib/core/1.9.2/Symbol) are strange beasts if you have come from other programming languages. If you aren't sure what to make of them, perhaps you could spend more time with them or figure out how to turn convert them to things you know what to do with.
+
+[Nil](http://rubydoc.info/stdlib/core/1.9.2/NilClass) is like a [manticore](http://en.wikipedia.org/wiki/Manticore) or a [liger](http://www.urbandictionary.com/define.php?term=liger). Everything is one at some point, until they are assigned something but they they have things that they can do. What happens when you convert one to a number or string? 
+>>>>>>> Added an exploration section for the various introduced class types
 
 #### Rake
 
