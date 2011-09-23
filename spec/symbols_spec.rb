@@ -22,6 +22,18 @@ describe "Symbols", "not quite a string, not yet a constant" do
     
   end
   
+  context "when converting to s string" do
+    
+    it "should be equal to a string" do
+      
+      value = :prince
+      
+      value.to_s.should eq "prince"
+      "#{value}".should eq "prince"
+      
+    end
+    
+  end
   
   context "when converting from a string" do
     
