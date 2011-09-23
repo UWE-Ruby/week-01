@@ -114,7 +114,16 @@ When you're trying to solve problems or simply exploring the Ruby language it be
 
 Within the tests that have executed several of them are passing but a few are broken. It's mighty morphing Ruby time!
 
-    [TODO: Broken Tests Missing]
+Within the examples provided there are several working, positive examples divided into different types. Open one of the files and look within the output from Guard and see where that information is being presented.
+
+All of the failing examples can be found in the file `spec/failing_spec.rb`. This is where you will get your hands dirty.
+
+1. Identify the failures
+2. Identify where in the failure information what is the file and what is line number.
+3. Go to that file and line number
+4. Fix the issue.
+
+With Guard running any change you make and save will cause the system to re-run the tests. There you can watch to see if the number of failures decreases. Your goal is to have *57 examples, 0 failures*. Good luck!
 
 6. Save your changes
 
