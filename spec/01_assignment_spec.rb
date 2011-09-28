@@ -5,13 +5,14 @@ describe "Variable" do
 
     it "does not require declaration or setup" do
 
-      # the variable [ a ] does not exist, which is also known as [ nil ]
-      a.should eq nil
+      # The variable [ a ] does not exist, which is also known as [ nil ]
+      # This code: "a.should eq 1"
+      # would raise a NameError exception: "undefined local variable or method 'a'"
 
-      # once we use [ a ] it exists!
+      # But, once we assign something to [ a ] ...
       a = 1
 
-      # the variable [ a ] now exists
+      # then it exists
       a.should eq 1
 
     end
