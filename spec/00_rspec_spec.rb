@@ -10,22 +10,31 @@ describe "The Rspec ruby gem" do
 
     end
 
-    it "uses keywords like #context, and #describe to help organize the spec, or specification" do
+    it "has keywords like #context, and #describe to help organize the spec, or specification" do
 
       # test code goes here
       lambda{ context() }.class.should eq Proc
 
     end
 
-    it "allows readable methods like #should to be used to test any object" do
+    it "has easily readable methods like #should to test any object" do
 
       "Hello".class.should eq String
 
     end
 
-    it "allows #should_not to test for negative cases" do
+    it "has #should_not to test for negative cases" do
 
       1.should_not eq 2
+
+    end
+
+    it "creates readable predicate methods" do
+
+      # Integers have #zero? and #nil? predicate methods, so
+      # rspec automatically supports the #be_zero and #be_nil parameter to #should_not method
+      1.should_not be_zero
+      1.should_not be_nil
 
     end
 
