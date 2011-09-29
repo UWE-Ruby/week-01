@@ -8,6 +8,16 @@ It is important to take the time to understand your tools and start to become ac
 
 Despite all this non-Ruby business there is a portion where you will actually start to learn Ruby syntax. So never fear you still will have a chance to get a small fix of the good stuff.
 
+### Objective
+
+Complete the following sections:
+
+* Sharpening Your Weapons
+* The Kingdom of Github
+* The Land of Ruby
+
+The additional exercises in the *exploration* section are for those interested in spending a little more time within these areas.
+
 ## Sharpening Your Weapons
 
 Before preparing for battle it is important that you have steeled your nerve and sharpened your tools. With software development you must do the same. Before we enter into the world of mature land of Ruby, that we are prepared for any chance encounter.
