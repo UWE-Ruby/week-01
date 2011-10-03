@@ -4,9 +4,9 @@
 
 The objective of these exercises are to set up tools and processes that you will use for many weeks and months to come as a developer. Quickly scanning the tasks that lay ahead you will get the distinct impression that the majority of your time is not actually learning the Ruby language. That is indeed an accurate observation (+1 point). This is not an oversight.
 
-It is important to take the time to understand your tools and start to become acquainted with the development community. That added benefit is that when Ruby is dead and gone the exercises here will assist you in your development efforts ahead.
+It is important to take the time to understand your tools and start to become acquainted with the development community. These skills will assist you immediately and down the road as well.
 
-Despite all this non-Ruby business there is a portion where you will actually start to learn Ruby syntax. So never fear you still will have a chance to get a small fix of the good stuff.
+Despite all this non-Ruby business there is a portion where you will actually start to learn Ruby syntax. So never fear you write some delicious Ruby code this week!
 
 ### Objective
 
@@ -20,27 +20,28 @@ The additional exercises in the *exploration* section are for those interested i
 
 ## Sharpening Your Weapons
 
-Before preparing for battle it is important that you have steeled your nerve and sharpened your tools. With software development you must do the same. Before we enter into the world of mature land of Ruby, that we are prepared for any chance encounter.
+Before preparing for battle it is important that you have steeled your nerve and sharpened your tools. With software development you must do the same. Before we enter into the vast land of Ruby, you must be prepared for any chance encounter.
 
-    The following exercises inolve a lot of software installation. With that comes a whole host of new problems as every system is different. In some instances this may already be easy or already completed. In others this may be your undoing. I implore you to stay with it and know that we are all here to help you make it through.
+    The following exercises involve a lot of software installation. With that comes a whole host of new problems as every system is different. In some instances this may already be easy or already completed. In others this may be your undoing. I implore you to stay with it and know that we are all here to help you make it through.
 
 1. [Install Git](http://help.github.com/mac-set-up-git/)
 
 Git is a distributed version control system. This is an essential tool to ensure your work is saved and versioned successfully.
 
-    An exercise near the end encourages you to return to learn more about git.
+    An optional 'Exploration' exercise below encourages you to return to learn more about git.
 
 ### Linux / Mac
 
 2. Install RVM and Ruby 1.9.2 (Linux/Mac)
 
-    Sorry Window's users, there is no rvm for Windows. There is [Pik](https://github.com/vertiginous/pik) but the instructors cannot support it.
+    Sorry Window's users, there is no rvm for Windows. There is similar tool called [Pik](https://github.com/vertiginous/pik) which works quite well. However, the instructors cannot support Pik.
 
 Ruby Version Manager (RVM) allows you to install multiple ruby versions on your system and switch between them easily. You may be asking: _Why am I worrying about multiple different versions of Ruby when I don't even know how to program in one?_ Great question, you sure are smart!
 
-Even if you are only going to use one Ruby version it is still important to ensure that you are familiar with a tool that is industry standard. It also makes it unbelievably easier to install ruby.
+Even if you are only going to use one Ruby version it is still important to ensure that you are familiar with a tool that is a community standard. It also makes it unbelievably easier to install ruby.
 
-If you are comfotable with the command line and or on linux, Visit: http://beginrescueend.com/rvm/install/
+If you are comfortable with the command line and or on linux, Visit: http://beginrescueend.com/rvm/install/. For single user installations (where only one user will run ruby), rvm should be installed in user mode (without sudo).
+
 If you are on MacOS, there is a useful and fun GUI: [JewelryBox](http://jewelrybox.unfiniti.com/)
 
 
@@ -48,7 +49,7 @@ If you are on MacOS, there is a useful and fun GUI: [JewelryBox](http://jewelryb
 
 2. Install Rails Installer
 
-    When I was your age we had to walk up hill both ...
+    When I was your age we had to walk up hill, both ways, in the ...
     
 Let me assure you that what follows is not an attempt to dissuade you from using Windows. I simply want to express to you that as a Windows Ruby developer you simply face a tougher battle. Windows is not the first concern when a Ruby developer releases a library into the world to share. It is also much harder to find sympathy and support from the community.
 
@@ -58,11 +59,11 @@ However, thanks to the efforts of a few, Ruby development on Windows system has 
 
 ## The Kingdom of Github
 
-Github is a easy, and free (as long as what you are doing is public) way to share code and collaborate with others. It's like the Facebook of software development.
+Github is an easy, and free (as long as what you are doing is public) way to share code and collaborate with others. It's like the Facebook of software development.
 
 Accounts are free for all the work that we are doing and your account will likely be free for as long as what you are doing does not need to be private.
 
-    An exercise near the end encourages you to return to learn more about Github.
+    An 'Exploration' exercise below encourages you to return to learn more about Github.
 
 1. Create a [Github](https://github.com/signup/free) account
 
@@ -74,7 +75,7 @@ Accounts are free for all the work that we are doing and your account will likel
     
 3. I will add you the [UWE-Ruby](https://github.com/organizations/UWE-Ruby) organization
 
-Alongside individual developer accounts you can form organizations. They are also free as long as you willing to host public projects. In most cases you do not need to form an organization. It is beneficial for us here so that you can view the assignment repositories.
+As well as individual developer accounts, Github offers organization accounts. We are using the UWE-Ruby organization for this class. However, any other work you want to put on Github would not be part of this organization.
   
 4. Fork and clone this repository
 
@@ -83,7 +84,9 @@ Alongside individual developer accounts you can form organizations. They are als
 Any user can fork any public repository. That means you can very easily create your own personal versions of anything that someone else has created (e.g. like the [linux](https://github.com/torvalds/linux)).
 
 When you fork it, a copy is made that you have the ability to augment. By forking the assignment you can make changes to your version, while the original
-version owned by me remains mine.
+version owned by me remains and unchanged.
+
+### Advanced Features of Git
 
 ## The Land of Ruby
 
@@ -155,10 +158,31 @@ With your files saved (committed), you can copy those changes to your repository
 Git is complex software. 
 http://gitref.org/
 
-Spend some time learning more about git. Read through at least the introduction on the first page. If you're still following follow the link at the bottom _On to Getting and Creating Projects »_ and continue reading until you've had your head is swimming or it's put you to sleep. *There is no requirement that you complete anything; just look around.*
+Spend some time learning more about git. Read through at least the introduction on the first page. If you're still following follow the link at the bottom _On to Getting and Creating Projects »_ and continue reading until you've had your head is swimming or it's put you to sleep.
+
+*There is no requirement that you complete anything; just look around.*
 
     I assure you that the more time you spend here trying to understand or learning, the more amazing you will be in the rest of the development that you do.
 
+Please note that since this class is not about Git we have to avoid getting side tracked by the many complexities of Git. So dig deep, but we'll just use the basics in class.
+
+The commands you will need to understand before you start to feel comfortable.
+
+    git clone
+    git status
+    git log
+    git add
+    git commit
+    git pull
+    git push
+
+Inevitably you will find yourself stuck once or twice and unsure what to do next when working with git. Well, here's what to do:
+
+1. Just ask or search for help. Undoing your most recent action is usually very simple. (But you'll want to get the undo right!)
+
+2. Go slow. Run `git log` and `git status` a few times. Think about the git workflow.
+
+3. Until you are somewhat proficient, if you get really stuck it's better to start over. Simply save your code off somewhere, clone a clean repository and start over practicing a clean git workflow.
 
 ### Learn more about `github`
 
@@ -183,14 +207,14 @@ The following editors are simply suggestions:
 
 * [Redcar](http://redcareditor.com/)
 * [Notepad++](http://notepad-plus-plus.org/)
-* [Rubymine](http://www.jetbrains.com/ruby/)
+* [RubyMine](http://www.jetbrains.com/ruby/)
 * [Komodo Edit](http://www.activestate.com/komodo-edit)
 * [E Editor](http://www.e-texteditor.com/)
 
 #### Linux
 
 * [Redcar](http://redcareditor.com/)
-* [Rubymine](http://www.jetbrains.com/ruby/)
+* [RubyMine](http://www.jetbrains.com/ruby/)
 * vi
 * emacs
 
@@ -198,15 +222,15 @@ The following editors are simply suggestions:
 
 * [Redcar](http://redcareditor.com/)
 * [TextMate](http://macromates.com/)
-* [Rubymine](http://www.jetbrains.com/ruby/)
+* [RubyMine](http://www.jetbrains.com/ruby/)
 * [macvim](http://code.google.com/p/macvim/)
 * vi
 * emacs
 
 
-### Explore Ruby through RSpec, Rake, and Bundler
+### Explore Ruby through RSpec, Rake, Guard, and Bundler
 
-*Bundler*, *Rake*, *Guard* and *RSpec* are all written in Ruby. Yet they all have very different syntax. This can often times lead to confusion to those of new to the Land of Ruby. Under the sheets it is using some of the more advanced features of Ruby to make it the code written more clear and to the point.
+*Bundler*, *Rake*, *Guard* and *RSpec* are all written in Ruby. Yet they all have very different syntax. This can often times lead to confusion to those of new to the Land of Ruby. Under the sheets they are using some of the more advanced features of Ruby to make it the code written more clear and to the point.
 
     The following exercises spend a moment with each. Don't feel like you need to explore each one or explore just one.
 
