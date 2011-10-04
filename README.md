@@ -4,9 +4,9 @@
 
 The objective of these exercises are to set up tools and processes that you will use for many weeks and months to come as a developer. Quickly scanning the tasks that lay ahead you will get the distinct impression that the majority of your time is not actually learning the Ruby language. That is indeed an accurate observation (+1 point). This is not an oversight.
 
-It is important to take the time to understand your tools and start to become acquainted with the development community. These skills will assist you immediately and down the road as well.
+It is important to take the time to become acquainted with a number of great time saving tools. As well as starting to reach out to the development community. Trust me that the efforts spent here will help build skills that will come to your aid in short amount of time.
 
-Despite all this non-Ruby business there is a portion where you will actually start to learn Ruby syntax. So never fear you write some delicious Ruby code this week!
+Despite all this non-Ruby business there is a portion where you will actually start to learn Ruby syntax. So never fear you'll write some delicious Ruby code this week!
 
 ### Objective
 
@@ -24,38 +24,65 @@ Before preparing for battle it is important that you have steeled your nerve and
 
     The following exercises involve a lot of software installation. With that comes a whole host of new problems as every system is different. In some instances this may already be easy or already completed. In others this may be your undoing. I implore you to stay with it and know that we are all here to help you make it through.
 
-1. [Install Git](http://help.github.com/mac-set-up-git/)
+### Install Git
 
 Git is a distributed version control system. This is an essential tool to ensure your work is saved and versioned successfully.
 
     An optional 'Exploration' exercise below encourages you to return to learn more about git.
 
-### Linux / Mac
+#### Linux Users
 
-2. Install RVM and Ruby 1.9.2 (Linux/Mac)
+You can follow the instructions outlined on [Github](http://help.github.com/linux-set-up-git/).
 
-    Sorry Window's users, there is no rvm for Windows. There is similar tool called [Pik](https://github.com/vertiginous/pik) which works quite well. However, the instructors cannot support Pik.
+#### Mac Users
 
-Ruby Version Manager (RVM) allows you to install multiple ruby versions on your system and switch between them easily. You may be asking: _Why am I worrying about multiple different versions of Ruby when I don't even know how to program in one?_ Great question, you sure are smart!
+[Github](Instll) outlines installation instructions which tell you to install Git from the [source](http://git-scm.com/). I would recommend that you take the plunge and install [Homebrew](http://mxcl.github.com/homebrew/).
 
-Even if you are only going to use one Ruby version it is still important to ensure that you are familiar with a tool that is a community standard. It also makes it unbelievably easier to install ruby.
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.github.com/gist/323731)"
+    
+Brew will allow you install multiple different programs very quickly and easily.
+
+    brew install git
+    
+#### Windows Users
+
+Instead of installing Git as a standalone, I would recommend that you use the [Rails Installer](http://railsinstaller.org/) which installs for you git and a whole lot more (time saving things; not the usual fluff that ends up being a whole lot more).
+
+    Download: [http://rubyforge.org/frs/download.php/75346/railsinstaller-2.0.0.exe](http://rubyforge.org/frs/download.php/75346/railsinstaller-2.0.0.exe)
+
+
+
+### Install RVM/Pik
+
+Ruby Version Manager ([RVM](https://rvm.beginrescueend.com)) and [Pik](https://github.com/vertiginous/pik) allows you to install multiple ruby versions on your system and switch between them easily. You may be asking: _Why am I worrying about multiple different versions of Ruby when I don't even know how to program in one?_ Great question, you sure are smart!
+
+Even if you are only going to use one Ruby version it is still important to ensure that you are familiar with a tool that is a community standard. It also makes it unbelievably easier to update and upgrade in the future.
+
+#### Linux Users
+
+    $ sudo apt-get install build-essential
+    $ sudo apt-get install curl
+    $ sudo apt-get install zlib1g-dev libreadline5-dev libssl-dev libxml2-dev libxslt1-dev
+    $ sudo apt-get install ruby1.8 rubygems1.8
+
+First you install some necessary packages that ruby requires. Then you actually install an older version of Ruby. The older version of ruby is required to install RVM which will allow you to install and update various different versions of ruby.
+
+    $ sudo gem install rvm
+
+Install Ruby 1.9.2 and make it the default Ruby for your user.
+
+    $ rvm install ruby-1.9.2-p290
+    $ rvm --default use ruby-1.9.2-p290
+
+#### Mac Users
+
+Mac users are now welcome to choose the graphical route through [JewelryBox](http://jewelrybox.unfiniti.com/).
 
 If you are comfortable with the command line and or on linux, Visit: http://beginrescueend.com/rvm/install/. For single user installations (where only one user will run ruby), rvm should be installed in user mode (without sudo).
 
-If you are on MacOS, there is a useful and fun GUI: [JewelryBox](http://jewelrybox.unfiniti.com/)
+#### Windows
 
-
-### Windows
-
-2. Install Rails Installer
-
-    When I was your age we had to walk up hill, both ways, in the ...
-    
-Let me assure you that what follows is not an attempt to dissuade you from using Windows. I simply want to express to you that as a Windows Ruby developer you simply face a tougher battle. Windows is not the first concern when a Ruby developer releases a library into the world to share. It is also much harder to find sympathy and support from the community.
-
-However, thanks to the efforts of a few, Ruby development on Windows system has gotten better. Installation of the necessary tools is far easier than in the past.
-
-    Visit: http://railsinstaller.org/
+[Pik](https://github.com/vertiginous/pik) provides support like RVM. However, it does not have the maturity and support that you may find with the other OS alternatives. If it gives you any trouble you can resort to not installing it.
 
 ## The Kingdom of Github
 
@@ -96,7 +123,7 @@ It is with great pleasure that I welcome you to the Land of Ruby. What lies ahea
 
    Do not be discouraged if again you feel as though you are simply following steps without any understanding. You will do this again and again.
 
-1. Install Bundler (gem)
+### 1. Install Bundler (gem)
 
 ```bash
 gem install bundler
@@ -104,26 +131,26 @@ gem install bundler
 
 [Bundler](http://gembundler.com/rationale.html) is a library that takes care of installing all the remaining, necessary libraries (gems) for a project. This assignment requires a number of ruby libraries (gems) and instead of having you enter all those in, Bundler will take care of it for you.
 
-2. Install all the remaining gems
+### 2. Install all the remaining gems
 
 ```bash
 bundle
 ```
 Executing `bundle ` will take care of installing all the remaining gems that this project requires.
 
-3. Run the tests
+### 3. Run the tests
 
 The tests for this project are written in a Ruby test library named [RSpec](https://www.relishapp.com/rspec).
 
     rake
 
-4. Setup a guard
+### 4. Setup a guard
 
 When you're trying to solve problems or simply exploring the Ruby language it becomes tiring having to: write code; save code; and run the the tests. Thankfully other developers understood that and put together a library (gem) called Guard. Guard will watch to see when test files are saved and re-run the tests for you automatically.
 
     guard
 
-5. Fix the broken tests
+### 5. Fix the broken tests
 
 Within the tests that have executed several of them are passing but a few are broken. It's mighty morphing Ruby time!
 
@@ -138,20 +165,24 @@ All of the failing examples can be found in the file `spec/failing_spec.rb`. Thi
 
 With Guard running any change you make and save will cause the system to re-run the tests. There you can watch to see if the number of failures decreases. Your goal is to have *57 examples, 0 failures*. Good luck!
 
-6. Save your changes
+### 6. Save your changes
 
 When you have finished fixing the tests it is time to save your work with git. What follows is a series of commands that will save your files.
 
     git add spec
     git commit -m "Fixes to the Broken Tests"
 
-7. Share your changes
+### 7. Share your changes
 
 With your files saved (committed), you can copy those changes to your repository on Github. Creating a copy of them on an external system, allowing you to: recover them if you were to delete them locally; start work on another system; or share your work with other people.
 
     git push origin master
 
+
+
 ## Exploration
+
+Congratulations. If you have made it this far you have completed all you had to accomplish. But I'm sure that you likely have burning questions or would like to learn more about a particular technology or Ruby. This is your chance...
 
 ### Learn more about `git`
 
@@ -280,7 +311,6 @@ Using [Rubydoc.info](http://rubydoc.info/) as a resource try to define your own 
 [Symbols](http://rubydoc.info/stdlib/core/1.9.2/Symbol) are strange beasts if you have come from other programming languages. If you aren't sure what to make of them, perhaps you could spend more time with them or figure out how to turn convert them to things you know what to do with.
 
 [Nil](http://rubydoc.info/stdlib/core/1.9.2/NilClass) is like a [manticore](http://en.wikipedia.org/wiki/Manticore) or a [liger](http://www.urbandictionary.com/define.php?term=liger). Everything is one at some point, until they are assigned something but they they have things that they can do. What happens when you convert one to a number or string? 
->>>>>>> Added an exploration section for the various introduced class types
 
 #### Rake
 
