@@ -48,8 +48,7 @@ Brew will allow you install multiple different programs very quickly and easily.
 
 Instead of installing Git as a standalone, I would recommend that you use the [Rails Installer](http://railsinstaller.org/) which installs for you git and a whole lot more (time saving things; not the usual fluff that ends up being a whole lot more).
 
-    Download: [http://rubyforge.org/frs/download.php/75346/railsinstaller-2.0.0.exe](http://rubyforge.org/frs/download.php/75346/railsinstaller-2.0.0.exe)
-
+    Download: http://rubyforge.org/frs/download.php/75346/railsinstaller-2.0.0.exe
 
 
 ### Install RVM/Pik
@@ -76,11 +75,26 @@ Install Ruby 1.9.2 and make it the default Ruby for your user.
 
 #### Mac Users
 
-Mac users are now welcome to choose the graphical route through [JewelryBox](http://jewelrybox.unfiniti.com/).
+Launch *Terminal*. This will allow you to run the commands to install [RVM](https://rvm.beginrescueend.com).
 
-If you are comfortable with the command line and or on linux, Visit: http://beginrescueend.com/rvm/install/. For single user installations (where only one user will run ruby), rvm should be installed in user mode (without sudo).
+Install RVM through the following command:
+
+    $ bash < <(curl -s https://rvm.beginrescueend.com/install/rvm)
+
+Then install the RVM script to your `~/.bash_profile`:
+
+    $ echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function' >> ~/.bash_profile
+    
+Now close your current Terminal and launch a new Terminal.
+
+Install Ruby 1.9.2 and make it the default Ruby for your user.
+
+    $ rvm install ruby-1.9.2-p290
+    $ rvm --default use ruby-1.9.2-p290
 
 #### Windows
+
+* Pik is optional for Windows users.
 
 [Pik](https://github.com/vertiginous/pik) provides support like RVM. However, it does not have the maturity and support that you may find with the other OS alternatives. If it gives you any trouble you can resort to not installing it.
 
@@ -92,23 +106,29 @@ Accounts are free for all the work that we are doing and your account will likel
 
     An 'Exploration' exercise below encourages you to return to learn more about Github.
 
-1. Create a [Github](https://github.com/signup/free) account
+### 1. Create a [Github](https://github.com/signup/free) account
 
     Visit: https://github.com/signup/free
 
-2. Message me [burtlo](https://github.com/burtlo).
+### 2. Create a SSH key and Upload it to Github
+
+After the git instructions for each OS [Linux](http://help.github.com/linux-set-up-git/), [Mac](http://help.github.com/mac-set-up-git/), and [Windows](http://help.github.com/win-set-up-git/) there are instructions about generating and uploading your SSH keys to Github.
+
+### 3. Message me [burtlo](https://github.com/burtlo).
 
     Visit: https://github.com/inbox/new
     
-3. I will add you the [UWE-Ruby](https://github.com/organizations/UWE-Ruby) organization
+### 4. I will add you the [UWE-Ruby](https://github.com/organizations/UWE-Ruby) organization
 
 As well as individual developer accounts, Github offers organization accounts. We are using the UWE-Ruby organization for this class. However, any other work you want to put on Github would not be part of this organization.
   
-4. Fork and clone this repository
+### 5. Fork and clone this repository
 
-    Visit: http://help.github.com/fork-a-repo/
+Any user can fork and clone any public repository. That means you can very easily create your own personal versions of anything that someone else has created (e.g. like [linux](https://github.com/torvalds/linux)).
 
-Any user can fork any public repository. That means you can very easily create your own personal versions of anything that someone else has created (e.g. like the [linux](https://github.com/torvalds/linux)).
+Now it is time to fork *this* repository. There is a *Fork* button at the top of this page that allows you to make a copy of this repository.
+
+    Instructions on how to Fork and Clone: http://help.github.com/fork-a-repo/
 
 When you fork it, a copy is made that you have the ability to augment. By forking the assignment you can make changes to your version, while the original
 version owned by me remains and unchanged.
