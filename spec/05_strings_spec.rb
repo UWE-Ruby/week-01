@@ -165,4 +165,27 @@ Second}
 
   end
   
+  context "failing tests" do
+    
+    it "should insert the value into the string" do
+      
+      name = "Old Gregg"
+      'My name is #{name}'.should eq 'My name is Old Gregg'
+      
+    end
+    
+    it "should perform calculations within the area escaped within the String" do
+      
+      "#{1 + 1}".should eq '1 + 1'
+      
+    end
+    
+    it "should be equal to each other" do
+      
+      "\nDo you like Bailey's".should eq '\nDo you like Bailey\'s'
+      
+    end
+    
+  end
+  
 end

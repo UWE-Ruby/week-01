@@ -118,5 +118,55 @@ describe "Variable" do
     end
 
   end
+  
+  context "when adding" do
+  
+    it "should be equal to the sum" do
+      first = second = 1
+      sum = first + second
+    
+      (first + second).should eq 3
+      sum.should eq 3
+    end
+    
+  end
+  
+  context "when dividing/'modulosing'" do
+    
+    it "should be equal to the dividend" do
+
+      (12 / 3).shoud eq 3
+      
+    end
+    
+    it "should be equal to the the remainder" do
+      
+      (100 % 3).should eq 33
+      
+    end
+    
+    it "should return an integer when using two integers" do
+      
+      # For this one see if you can leave the math operation (4 / 3) alone and
+      # change the expectation
+      
+      (4 / 3).should eq 1.3
+      
+    end
+    
+    it "should return a float when at least one number is a float" do
+      
+      # Again for this example leave the operation (4.to_f / 3) alone and
+      # change the expectation. The answer to this may appear as though 
+      # you are repeating yourself in the expectations but go with it.
+      
+      numerator = 4.0
+      divisor = 3
+      
+      (numerator / divisor).should eq 1
+      
+    end
+    
+  end
 
 end

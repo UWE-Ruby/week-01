@@ -55,5 +55,22 @@ describe "Symbols", "not quite a string, not yet a constant" do
     
   end
   
+  context "failing tests" do
+    
+    context "when I call to_s or place it in a String on the Symbol" do
+      
+      it "should be equal to a string" do
+        
+        # For this one see what you can do to the symbol stored in the variable
+        # artist to make it meet the expectations "george_michael"
+        
+        artist = :george_michael
+        artist.should == "george_michael"
+      end
+      
+    end
+    
+  end
+  
   
 end

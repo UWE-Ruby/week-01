@@ -86,4 +86,12 @@ describe "Boolean" do
     
   end
   
+  context "failing tests" do
+    
+    it "true should be true" do
+      true.should eq "true"
+    end
+    
+  end
+  
 end
