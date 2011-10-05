@@ -1,4 +1,3 @@
-
 describe "Variable" do
 
   context "assignment flow" do
@@ -135,7 +134,7 @@ describe "Variable" do
     
     it "should be equal to the dividend" do
 
-      (12 / 3).shoud eq 3
+      (12 / 3).should eq 3
       
     end
     
