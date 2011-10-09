@@ -163,6 +163,8 @@ Executing `bundle ` will take care of installing all the remaining gems that thi
 The tests for this project are written in a Ruby test library named [RSpec](https://www.relishapp.com/rspec).
 
     rake
+    
+NOTE: If rake fails to work you may have to execute the command: `bundle exec rake`
 
 ### 4. Setup a guard
 
