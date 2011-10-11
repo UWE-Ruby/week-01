@@ -185,7 +185,7 @@ All of the failing examples can be found in the file `spec/failing_spec.rb`. Thi
 3. Go to that file and line number
 4. Fix the issue.
 
-With Guard running any change you make and save will cause the system to re-run the tests. There you can watch to see if the number of failures decreases. Your goal is to have *57 examples, 0 failures*. Good luck!
+With Guard running any change you make and save will cause the system to re-run the tests. There you can watch to see if the number of failures decreases. Your goal is to have *68 examples, 0 failures*. Good luck!
 
 ### 6. Save your changes
 
