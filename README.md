@@ -266,6 +266,7 @@ The following editors are simply suggestions:
 
 #### Linux
 
+* [Sublime Text](http://www.sublimetext.com/)
 * [Redcar](http://redcareditor.com/)
 * [RubyMine](http://www.jetbrains.com/ruby/)
 * vi
